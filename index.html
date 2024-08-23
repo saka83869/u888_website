@@ -9,28 +9,6 @@
     <h1>Domain Checker</h1>
     <div id="result"></div>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script>
-        const domains = [
-            'https://www.google.com/',
-            'https://www.youtube.com/',
-            'https://mail.google.com'
-        ];
-
-        async function checkDomains() {
-            for (const domain of domains) {
-                try {
-                    const response = await axios.get(domain);
-                    console.log(`Kết nối thành công: ${domain}`);
-                    window.location.href = (domain);
-                    break;
-                } catch (error) {
-                    console.log(`Không thể kết nối tới: ${domain}`);
-                    <title>Không thể kết nối tới các domain</title>
-                }
-            }
-        }
-
-        checkDomains();
-    </script>
+    <script src="./script.js"></script>
 </body>
 </html>
