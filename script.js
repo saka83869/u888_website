@@ -9,8 +9,7 @@ async function checkDomains() {
         try {
             const response = await axios.get(domain);
             console.log(`Kết nối thành công: ${domain}`);
-            location.replace(domain);
-            window.location.replace(domain)
+            window.location.href = domain
             break;
         } catch (error) {
             console.log(`Không thể kết nối tới: ${domain}`);
