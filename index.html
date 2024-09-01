@@ -1,14 +1,292 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kiểm tra các domain</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="./favicon.png">
+	<title>Abc8</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+		* {
+			font-family: "Inter", sans-serif;
+			padding: 0;
+			margin: 0;
+		}
+
+
+		.container {
+			background: url("./img/bgpc.png");
+			background-size: cover;
+			background-position: bottom center;
+			width: 100%;
+			height: 100vh;
+			position: relative;
+			text-align: center;
+			overflow: hidden;
+		}
+
+		
+		.shield {
+			width: 310px;
+		}
+
+		.btn {
+			width: 515px;
+			transition: transform .2s;
+		}
+
+		.btn:hover {
+			transform: scale(1.1);
+		}
+
+		.header {
+			position: relative;
+			margin-bottom: 30px;
+		}
+
+
+
+
+		.form {
+			width: 500px;
+			margin: auto;
+		}
+
+		.form p {
+			font-weight: bold;
+			font-size: 24px;
+
+
+			margin-top: 20px;
+
+
+
+
+
+
+		}
+
+		.label {
+			width: 100%;
+			text-align: left;
+			margin-bottom: 10px;
+			color: #4B95ED;
+		}
+
+
+		.inputtext {
+
+
+			padding: 10px 20px;
+			width: calc(100% - 40px);
+			height: 40px;
+			border: 0;
+			background: #F8F9FD;
+			box-shadow: inset 0px 2px 12px rgba(0, 0, 0, 0.15);
+			border-radius: 20.5167px;
+
+		}
+
+		.submit-btn {
+			text-align: center;
+			display: block;
+			margin-top: 30px;
+			padding: 15px 0;
+			border: 0;
+			color: white;
+			font-size: 18px;
+			text-transform: uppercase;
+			width: 100%;
+			height: 30px;
+
+			background: linear-gradient(0deg, #FF0F00, #FF0F00),
+				radial-gradient(65.28% 65.28% at 26.39% 20.83%, rgba(255, 255, 255, 0.413) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%)
+				/* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+				,
+				radial-gradient(92.09% 85.42% at 86.3% 87.5%, rgba(0, 0, 0, 0.23) 0%, rgba(0, 0, 0, 0) 86.18%)
+				/* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+			;
+
+			box-shadow: 5.72px 24.31px 88.61px 0px #00000080, -4.29px -5.72px 10px 0px #FFFFFF26 inset;
+
+
+			border-radius: 99px;
+			text-transform: uppercase;
+			text-decoration: none;
+			font-weight: bold;
+			font-size: 24px;
+			animation: ani-zoom 0.8s linear infinite;
+		}
+
+
+		@keyframes ani-zoom {
+			0% {
+				transform: scale(0.8);
+			}
+
+			50% {
+				transform: scale(0.9);
+			}
+
+			100% {
+				transform: scale(0.8);
+			}
+		}
+
+
+
+		.nutback {
+			background: none;
+			border: none;
+			cursor: pointer;
+			display: flex;
+			align-items: center;
+			padding: 20px;
+		}
+		button.nutback span {
+			color: #fff;
+			font-size: 18px;
+			font-weight: bold;
+			padding-left: 10px;
+		}
+
+		.nutback img {
+			width: 64px;
+		}
+
+
+		.submit-btn img {
+
+
+			width: 30px;
+			margin: 0 5px -2px 0px;
+		}
+
+		@media (max-width: 1024px) {}
+
+
+
+
+
+		@media (max-width: 768px) {
+			.content {
+				width: 100%
+			}
+
+			.logo {
+				width: 60%;
+			}
+
+			.form {
+				width: 80%;
+			}
+
+			.form p {
+				font-size: 20px;
+
+			}
+			button.nutback span {
+				display: none;
+			}
+		}
+
+		@media (max-width: 540px) {
+
+			.container {
+				width: 100%;
+			}
+
+			.shield {
+				width: 60%;
+			}
+
+			.nutback img {
+				width: 36px;
+			}
+
+
+
+		}
+
+
+		@media (max-width: 430px) {}
+
+		@media (max-width: 375px) {}
+	</style>
+		<link rel="manifest" href="./manifest.json">
 </head>
+<div class="container">
+	<button class="nutback" id="addShortcut">
+
+		<img src="./img/back.png"><span>THÊM VÀO MÀN HÌNH CHÍNH</span>
+	</button>
+
+	<div class="content">
+		<div class="header">
+
+			<a href="#"><img class="logo" src="./img/logo.png" alt="J88"></a>
+
+
+		</div>
+		<a href="#"><img class="shield" src="./img/bgz.png" alt="shield"></a>
+		<div class="form">
+
+			<p style="color: white;">Tên miền <strong style="color:#FF4D00;
+">VIP</strong> bền vững của ABC8</p>
+			<a href="#" class="submit-btn"><img src="./img/Discovery.png"> J88A111.COM </a>
+			<a href="#" class="submit-btn"><img src="./img/Discovery.png"> J88A222.COM</a>
+			<a href="#" class="submit-btn"><img src="./img/Discovery.png"> J88A33.COM</a>
+
+
+
+		</div>
+
+
+
+
+	</div>
+
+
+
+
+
+</div>
+
 <body>
-    <h1>Domain Checker</h1>
-    <div id="result"></div>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="./script.js"></script>
 </body>
+<script>
+	let deferredPrompt;
+
+	const addShortcutButton = document.getElementById('addShortcut');
+
+	window.addEventListener('beforeinstallprompt', (e) => {
+		// Ngăn trình duyệt hiển thị hộp thoại mặc định
+		e.preventDefault();
+		// Lưu sự kiện để sử dụng sau
+		deferredPrompt = e;
+		// Hiển thị nút thêm lối tắt
+		// addShortcutButton.style.display = 'block';
+	});
+
+	addShortcutButton.addEventListener('click', async () => {
+		if (deferredPrompt) {
+			// Hiển thị hộp thoại thêm lối tắt
+			deferredPrompt.prompt();
+			const result = await deferredPrompt.userChoice;
+			if (result.outcome === 'accepted') {
+				console.log('Lối tắt đã được thêm vào màn hình chính!');
+			} else {
+				console.log('Người dùng đã từ chối thêm lối tắt.');
+			}
+			// Đặt lại deferredPrompt để không hiển thị lại nút
+			deferredPrompt = null;
+		} else {
+			alert('Không có lối tắt nào có thể thêm.');
+		}
+	});
+</script>
 </html>
